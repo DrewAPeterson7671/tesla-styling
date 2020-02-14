@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 const careersStyle = {
   color: 'white',
   fontSize: '13px',
@@ -34,7 +36,6 @@ const linksStyles = {
 const listElementStyle = {
   float: 'left'
 }
-
 const title = {
   borderBottom: '1px solid',
   paddingBottom: '20px',
@@ -51,7 +52,7 @@ function Careers() {
 
     <nav className="about-us">
     <ul className="nav-class" style={careerLinks}>
-    <li style={listElementStyle}> <a href="#about-us" className="nav-item" style={linksStyles}/>About </li>
+    <li style={listElementStyle}> <Link to="/about-us" className="nav-item" style={linksStyles}>About</Link></li>
     <li style={listElementStyle}> <a href="#careers" className="nav-item" style={linksStyles}/>Careers </li>
     <li style={listElementStyle}> <a href="#contact" className="nav-item" style={linksStyles}/>Contact </li>
     <li style={listElementStyle}> <a href="#legal" className="nav-item" style={linksStyles}/>Legal </li>

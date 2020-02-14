@@ -27,6 +27,7 @@ function Nav() {
     zIndex: '1',
     overflow: 'hidden'
   };
+  
   const burger = {
     width: '17px',
     height:'17px',

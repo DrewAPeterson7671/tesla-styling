@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Nav from './Nav';
 import Careers from './Careers';
+import { Switch, Route } from 'react-router-dom';
+import AboutUs from './AboutUs';
 
 function App() {
   const vidStyle = {
@@ -22,8 +24,10 @@ function App() {
           <source src="https://www.tesla.com/ns_videos/careers-video-071017.mp4" type="video/ogv" media="(min-width: 640px)"/>
         </video>
       </div>
-      <Careers />
-
+      <Switch>
+        <Route exact path='/' component={Careers} />
+        <Route path='/about-us' component={AboutUs} />
+      </Switch>
     </div>
   );
 }
